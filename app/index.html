@@ -1,0 +1,125 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="main d-flex justify-content-between pt-12">
+    <div class="menu me-16">
+        <!-- 做下拉選單 -->
+        <a href="" class="nav-list-link">All (4) <span class="material-icons highlight-color">expand_more</span>
+        </a>
+        <ul>
+            <li class="list-item d-flex justify-content-between p-12 bg-light border-main-left border-main-right border-main-top">
+                <div>
+                    <p class="text-12 lh-24">Chapter Assignment 2</p>
+                    <p class="fw-bold">Please check this file…</p>
+                </div>
+                <div class="text-align-end">
+                    <p class="text-12 lh-24">4 hrs ago</p>
+                    <p class="text-12 lh-24 sub-color">Emily Wang</p>
+                </div>
+            </li>
+            <li class="list-item d-flex justify-content-between p-12 border-main-left border-main-right border-main-top">
+                <div>
+                    <p class="text-12 lh-24">Chapter Assignment 1</p>
+                    <p class="fw-bold">My Homework</p>
+                </div>
+                <div class="text-align-end">
+                    <p class="text-12 lh-24">12 hrs ago</p>
+                    <p class="text-12 lh-24 sub-color">David Xu</p>
+                </div>
+            </li>
+            <li class="list-item d-flex justify-content-between p-12 border-main-left border-main-right border-main-top">
+                <div>
+                    <p class="text-12 lh-24">Final Assignment</p>
+                    <p class="fw-bold">Have a problem with this…</p>
+                </div>
+                <div class="text-align-end">
+                    <p class="text-12 lh-24">18 hrs ago</p>
+                    <p class="text-12 lh-24 sub-color">Tony Wei</p>
+                </div>
+            </li>
+            <li class="list-item d-flex justify-content-between p-12 border-main">
+                <div>
+                    <p class="text-12 lh-24">Final Assignment</p>
+                    <p class="fw-bold">Did I do it right?</p>
+                </div>
+                <div class="text-align-end">
+                    <p class="text-12 lh-24">19 hrs ago</p>
+                    <p class="text-12 lh-24 sub-color">Christina Lin</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="section">
+        <div class="d-flex justify-content-end">
+            <p class="text-12 lh-24 sub-color">2 comments</p>
+        </div>
+        <div class="border-main mb-16">
+            <div class="d-flex justify-content-between align-items-center pt-12 pb-12 ps-16 pe-16 bg-color border-main-bottom">
+                <div>
+                    <p class="text-12 lh-24">Chapter Assignment 2 / HTML&CSS</p>
+                    <p class="fw-bold lh-24">Please check this file for me, thanks!</p>
+                </div>
+                <a href=""><span class="material-symbols-rounded">more_vert</span></a>
+            </div>
+            <div class="d-flex pt-16 ps-16 pe-32">
+                <div>
+                    <img src="assets/images/emilywang.jpeg" alt="">
+                </div>
+                <div class="ms-8 pb-16 border-main-bottom">
+                    <p class="fw-bold lh-24">Emily Wang</p>
+                    <p class="text-12 lh-24 mb-16 sub-color">10:38 AM (4 hours ago)</p>
+                    <p class="text-14 lh-21 mb-16">
+                        Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br>
+                        What is the gap or extra space below image?
+                    </p>
+                    <a href="" class="btn lh-40 ps-12 pe-16 bg-light border-main"><span class="material-symbols-rounded">attach_file</span> HW-2-David.zip</a>
+                </div>
+            </div>
+            <div class="d-flex pt-16 ps-16 pe-32">
+                <div>
+                    <img src="assets/images/andychen.jpeg" alt="andychen">
+                </div>
+                <div class="ms-8 pb-16">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <p class="fw-bold lh-24">Andy Chen (You)</p>
+                            <p class="text-12 lh-24 mb-16 sub-color">13:24 AM (1 hours ago)</p>
+                        </div>
+                        <ul class="d-flex">
+                            <li><a href=""><span class="material-symbols-rounded">star</a></span></li>
+                            <li><a href=""><span class="material-symbols-outlined ms-24">edit</span></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-14 lh-21 mb-16">
+                            Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                        </p>
+                        <p class="text-14 lh-21 mb-16">You can:</p>
+                        <ul class="text-14 lh-21 ps-32 mb-16">
+                            <li class="list-style">
+                                adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the <code>middle</code> ) or
+                            </li>
+                            <li class="list-style">
+                                change the <code>display</code> so it isn’t inline.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between ">
+            <ul class="d-flex">
+                <li><a href=""><span class="material-symbols-outlined">chevron_left</span></a></li>
+                <li><a href=""><span class="material-symbols-outlined ms-24">chevron_right</span></a></li>
+            </ul>
+            <ul class="d-flex">
+                <li><a href="" class="btn pt-8 pb-8 ps-32 pe-32 highlight-color border-highlight">Mark as read</a></li>
+                <li><a href="" class="btn pt-8 pb-8 ps-32 pe-32 ms-16 white bg-highlight">Reply</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
